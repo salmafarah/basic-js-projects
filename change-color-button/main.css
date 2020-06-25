@@ -4,3 +4,19 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.colorBtn{
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 40px;
+    background-color:#00ffab;
+    text-transform: capitalize; 
+    cursor: pointer; 
+    outline: none;
+}
+
+.colorBtn:hover{
+    background-color: coral;
+}
