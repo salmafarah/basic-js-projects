@@ -6,6 +6,7 @@ body{
     text-transform: capitalize; 
     font-family: 'Pacifico', Helvetica, sans-serif;
     background-image: url('https://i.imgur.com/l0E9j6C.jpg');
+    color: #FCD12A;
 }
 
 #btn{
@@ -25,7 +26,6 @@ body{
 
 #textChanger{
     font-size: 60px;
-    color: #FCD12A;
 }
 
 .container{
@@ -34,4 +34,16 @@ body{
 
 #text {
     font-size: 80px; 
+}
+
+blockquote {
+    border-left: 15px solid #063b00;
+    padding: 0.5rem; 
+    margin: 1.5rem; 
+    font-size: 40px;
+}
+
+#authorQuote{
+  font-size: 35px;
+    
 }
