@@ -1,0 +1,33 @@
+body{
+    min-height: 100vh;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize; 
+    font-family: 'IBM Plex Serif', serif;
+    background-color: #e11584;
+}
+.container{
+    text-align: center;
+    background-color:#F2B8C6;
+    border-radius: 5px;
+    padding: 60px;
+    box-shadow: 0 0 10px;
+    
+}
+
+button{
+    font-size: 2rem;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem; 
+    background-color: #F79AC0;
+    color:white;
+    border-radius: 8px;
+    border: none;
+    outline:none;
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
