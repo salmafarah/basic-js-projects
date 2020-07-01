@@ -1,0 +1,50 @@
+body{
+    min-height: 100vh;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize; 
+    font-family: 'IBM Plex Serif', serif;
+    background-color: coral;
+}
+.container{
+    text-align: center;
+    background-color: cornsilk;
+    padding: 2rem;
+    border-radius: 5px;
+    flex: 0 0 80%;
+}
+
+#btn{
+    display: block;
+    font-size: 2rem;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #f05e23;
+    color:white;
+    border-radius: 8px;
+    border: none;
+    outline:none;
+}
+
+#btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+input[type=text]{
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    border: 5px solid coral;
+    outline:none;
+}
+
+input[type=text]:focus{
+    box-shadow: 0 0 10px coral;
+}
+
+#messageOut{
+    margin: 0.5rem 0;
+    color: #f05e23; 
+}
