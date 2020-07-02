@@ -6,15 +6,35 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <script defer src="script.js"></script>
-    <title>Counter</title>
+    <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Counter</h1>
-        <h1 id="count"></h1>
-        <button type="button" id="btnAdd">Add Count</button>
-        <button type="button" id="btnSub">Sub Count</button>
+    <section class="Calculator">
+        <form>
+            <input type="text" name="" id="" class="screen">
+        </form>
+        <div class="buttons">
+            <button type="button" class="btn btn-yellow" data-num="*">*</button>
+            <button type="button" class="btn btn-yellow" data-num="/">/</button>
+            <button type="button" class="btn btn-yellow" data-num="-">-</button>
+            <button type="button" class="btn btn-yellow" data-num="+">+</button>
 
-    </div>
+            <button type="button" class="btn btn-grey" data-num=".">.</button>
+            <button type="button" class="btn btn-grey" data-num="9">9</button>
+            <button type="button" class="btn btn-grey" data-num="8">8</button>
+            <button type="button" class="btn btn-grey" data-num="7">7</button>
+            <button type="button" class="btn btn-grey" data-num="6">6</button>
+            <button type="button" class="btn btn-grey" data-num="5">5</button>
+            <button type="button" class="btn btn-grey" data-num="4">4</button>
+            <button type="button" class="btn btn-grey" data-num="3">3</button>
+            <button type="button" class="btn btn-grey" data-num="2">2</button>
+            <button type="button" class="btn btn-grey" data-num="1">1</button>
+
+            <button type="button" class="btn-equal btn-grey">=</button>
+
+            <button type="button" class="btn-clear btn-grey">C</button>
+
+        </div>
+    </section>
 </body>
 </html>
