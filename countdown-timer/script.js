@@ -4,7 +4,6 @@ function countdown(){
  const BdayDate = new Date (Bday);
  const currentDate = new Date();
  console.log( BdayDate - currentDate)
- 
 }
 
 countdown()
