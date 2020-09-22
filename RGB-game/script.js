@@ -34,3 +34,8 @@ function changeColors(color){
     squares[i].style.backgroundColor = color
   }
 }
+
+function pickedColor(){
+  var random = Math.floor(Math.random() * colors.length);
+  return colors[random]; 
+}
