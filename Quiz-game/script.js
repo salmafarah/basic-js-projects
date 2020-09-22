@@ -37,3 +37,25 @@ const quizData = [
     },
   
 ]
+
+let currentQuestion = 0;
+const questionEl = document.getElementById("question")
+const atext = document.getElementById("atext");
+const btext = document.getElementById("b");
+const ctext = document.getElementById("c");
+const dtext = document.getElementById("d");
+
+loadQuiz()
+
+function loadQuiz(){
+    const currentQuestionData = quizData[currentQuestion]
+    questionEl.textContent = currentQuestionData.question;
+    atext.textContent = currentQuestionData.a;
+    btext.textContent = currentQuestionData.b;
+    ctext.textContent = currentQuestionData.c;
+    dtext.textContent = currentQuestionData.d;
+
+    currentQuestion++
+
+
+}

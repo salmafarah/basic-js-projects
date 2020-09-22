@@ -15,6 +15,7 @@ body {
     background-color: lightcoral;
     border-radius: 5px;
     box-shadow: 0 0 10px lightsalmon;
+    overflow: hidden;
     width: 600px;
     max-width: 100%;
 }
@@ -34,4 +35,19 @@ button {
     width:100%;
     padding:1rem;
     border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgray ;
+}
+
+h1{
+    margin: 0;
+}
+
+ul li {
+    margin: 1rem 0;
+    font-size: 1.2rem;
 }
