@@ -39,11 +39,13 @@ const quizData = [
 ]
 
 let currentQuestion = 0;
+let score = 0;
 const questionEl = document.getElementById("question")
 const atext = document.getElementById("atext");
-const btext = document.getElementById("b");
-const ctext = document.getElementById("c");
-const dtext = document.getElementById("d");
+const btext = document.getElementById("btext");
+const ctext = document.getElementById("ctext");
+const dtext = document.getElementById("dtext");
+const submitBut = document.getElementById("submitButton")
 
 loadQuiz()
 
@@ -54,8 +56,35 @@ function loadQuiz(){
     btext.textContent = currentQuestionData.b;
     ctext.textContent = currentQuestionData.c;
     dtext.textContent = currentQuestionData.d;
+}
 
-    currentQuestion++
 
+
+function select() {
+    const answerEls = document.querySelectorAll(".answer")
+    let answer = undefined 
+
+    answerEls.forEach((answerEl) => {
+        if(answerEl.checked){
+            answer = answerEl.id
+    }
+
+    return answer    
+})
 
 }
+
+submitBut.addEventListener("click", function(){
+
+
+    const answer = select();
+
+    if(answer){
+        currentQuestion++
+        if (currentQuestion < quizData.length){
+            loadQuiz()
+        } else {
+            alert("Your Done !!!!!")
+        }
+    }
+}); 
