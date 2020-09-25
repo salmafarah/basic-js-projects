@@ -46,11 +46,13 @@ hardBtn.addEventListener("click", function(){
 resetButton.addEventListener("click",function(){
   colors = generateRandomColors(numOfSquares);
   pickedColor = pickColor();
+  messageDisplay.textContent = "";
   colorDisplay.textContent = pickedColor;
+  this.textContent = "New Colors"
   for (i =0; i<squares.length; i++){
     squares[i].style.backgroundColor = colors[i];
   }
-   h1Display.style.backgroundColor = "#232323"
+   h1Display.style.backgroundColor = "paleturquoise"
 })
 
 colorDisplay.textContent = pickedColor
