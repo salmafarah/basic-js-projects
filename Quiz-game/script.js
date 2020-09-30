@@ -40,6 +40,7 @@ const quizData = [
 
 let currentQuestion = 0;
 let score = 0;
+const answerEls = document.querySelectorAll(".answer")
 const questionEl = document.getElementById("question")
 const atext = document.getElementById("atext");
 const btext = document.getElementById("btext");
@@ -61,22 +62,21 @@ function loadQuiz(){
 
 
 function select() {
-    const answerEls = document.querySelectorAll(".answer")
-    let answer = undefined 
+    let answer = undefined; 
+
 
     answerEls.forEach((answerEl) => {
         if(answerEl.checked){
-            answer = answerEl.id
+             answer = answerEl.id
     }
+ })
 
     return answer    
-})
+
 
 }
 
-submitBut.addEventListener("click", function(){
-
-
+submitBut.addEventListener("click", () => {
     const answer = select();
 
     if(answer){
